@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DataSci</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous">
+        <style>
+
+            .card{
+                margin: auto;
+                height: 500px;
+            }
+        </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <form method="POST" action="" class="shadow-lg p-2 mb-5 bg-light-gray rounded">
+            {% csrf_token %}
+            <div class="form-group">
+                <h2 style="text-align: center;"><font color="white">DATASCIENCE PROJECT</font></h2>
+                <textarea class="form-control" rows="3" name="chat" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button><br>
+        <h4 style="text-align: center;">Classification : {{ label }}</h4>
+        <p class="card-text" style="text-align: center;"><small class="text-muted">Accuracy : {{ acc }} %</small></p>
+        </form>
+
+        <div class="row">
+
+        <div class="card text-white bg-dark " style="max-width: 45rem;">
+            <div class="card-header">บทสนทนาที่ 1</div>
+            <div class="card-body">
+                <h5 class="card-title">talk.politics.guns</h5>
+                <p class="card-text">
+                    Ask the Brits.  Enough people have been killed by rubber bullets that they now
+                    use them under only certain "controlled" circumstances.  And they are fired
+                    from something that looks like a tear gas launcher.
+                    
+                    There are smaller rubber bullets and pellets (for shotguns).  I understand that
+                    they are only intended to be discouragers, ie. for the snapping but not truly
+                    dangerous animal.  In general, they do not seem capable of really stopping
+                    someone who wants you or past you.  They are fired at very low muzzle velocity
+                    (the .38 ball round is intended for a 400fps load).  Finally, as your mother
+                    warned you, you can put an eye out with that thing.  :-)
+                    </p>
+            </div>
+        </div>
+            
+        <div class="card text-white bg-dark" style=" max-width:45rem;">
+            <div class="card-header">บทสนทนาที่ 2</div>
+            <div class="card-body">
+                <h5 class="card-title">rec.sport.hockey</h5>
+                <p class="card-text">
+
+                    I'm starting an informal poll on goalie masks. I'd like to know
+                who's mask you think looks the best. I've always like Curtis Joseph's
+                of the Blues the best. Anyway, send your nominations to me, or post your
+                vote here on r.s.h. My e-mail adress is: gtd597a@prism.gatech.edu
+                
+                    Thanks for your time.  
+                </p>
+            </div>
+        </div>     
+        
+        <div class="card text-white bg-dark" style="max-width: 45rem;">
+            <div class="card-header">บทสนทนาที่ 3</div>
+            <div class="card-body">
+                <h5 class="card-title">rec.motorcycles</h5>
+                <p class="card-text">
+                    Hi, I just have a small question about my bike. 
+                    Being a fairly experienced BMW and MZ-Mechanic, I just don't know what to 
+                    think about my Honda. 
+                    She was using too much oil for the last 5000 km (on my trip to Daytona bike 
+                    week this spring), and all of a sudden, she trailed smoke like hell and 
+                    was running only on one cylinder. 
+                    I towed the bike home and took it apart, but everything looks in perfect 
+                    working order. No cracks in the heads or pistons, the cylinder walls look 
+                    very clean, and the wear of pistons and cylinders is not measurable. All 
+                    still within factory specs. The only thing I could find, however, was a 
+                    slightly bigger ring gap on the right cylinder (the one with the problem), 
+                    but it is still way below the wear-limit given in the Clymer-manual for 
+                    this bike. 
+                    Any syggestions??? What else could cause my problem??? Do I have to hone 
+                    the cylinder walls (make them a little rougher in a criss-cross-pattern) in 
+                    order to get better breaking in of my new rings??? Won't that increase the 
+                    wear of my pistons??
+                    Please send comments to 
+                        sruhl@mechanical.watstar.uwaterloo.ca
+                    Thanks in advance. Stef. 
+                    
+                    </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
