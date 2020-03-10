@@ -5,14 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>DataSci</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm" crossorigin="anonymous">
+    <title>DataScience</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
         <style>
 
             .card{
                 margin: auto;
                 height: 500px;
+                border-width: 3px;
+                border-color: white;
             }
         </style>
 </head>
@@ -21,81 +23,65 @@
 
 
     <div class="container">
-        <form method="POST" action="" class="shadow-lg p-2 mb-5 bg-light-gray rounded">
+        <form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
             {% csrf_token %}
             <div class="form-group">
-                <h2 style="text-align: center;"><font color="white">DATASCIENCE PROJECT</font></h2>
+                <h2 style="text-align: center;">DATASCIENCE PROJECT</h2>
                 <textarea class="form-control" rows="3" name="chat" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button><br>
-        <h4 style="text-align: center;">Classification : {{ label }}</h4>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        <h1 style="text-align: center;">Classification : {{ label }}</h1>
         <p class="card-text" style="text-align: center;"><small class="text-muted">Accuracy : {{ acc }} %</small></p>
         </form>
-
         <div class="row">
-
-        <div class="card text-white bg-dark " style="max-width: 45rem;">
-            <div class="card-header">บทสนทนาที่ 1</div>
+        <div class="card text-white bg-dark " style="max-width: 10rem 10rem;">
+            <div class="card-header">ตัวอย่างบทสนทนา</div>
             <div class="card-body">
-                <h5 class="card-title">talk.politics.guns</h5>
+                <h5 class="card-title">comp.windows.x</h5>
                 <p class="card-text">
-                    Ask the Brits.  Enough people have been killed by rubber bullets that they now
-                    use them under only certain "controlled" circumstances.  And they are fired
-                    from something that looks like a tear gas launcher.
-                    
-                    There are smaller rubber bullets and pellets (for shotguns).  I understand that
-                    they are only intended to be discouragers, ie. for the snapping but not truly
-                    dangerous animal.  In general, they do not seem capable of really stopping
-                    someone who wants you or past you.  They are fired at very low muzzle velocity
-                    (the .38 ball round is intended for a 400fps load).  Finally, as your mother
-                    warned you, you can put an eye out with that thing.  :-)
+                        Hello Xperts out there.
+                        I've just built X11R5 for SunOS 4.1.1/SPARC.
+                        I have gcc-2.2 and I'd like to use its 64-bit capability
+                        to generate an X11 release which will render to the frame
+                        buffer using store-double (64-bit) machine code.
+                        Can anyone tell me which directories/source files/
+                        compiler switches to begin with?
                     </p>
             </div>
         </div>
-            
-        <div class="card text-white bg-dark" style=" max-width:45rem;">
-            <div class="card-header">บทสนทนาที่ 2</div>
-            <div class="card-body">
-                <h5 class="card-title">rec.sport.hockey</h5>
-                <p class="card-text">
 
-                    I'm starting an informal poll on goalie masks. I'd like to know
-                who's mask you think looks the best. I've always like Curtis Joseph's
-                of the Blues the best. Anyway, send your nominations to me, or post your
-                vote here on r.s.h. My e-mail adress is: gtd597a@prism.gatech.edu
-                
-                    Thanks for your time.  
-                </p>
+        <div class="card text-white bg-dark" style="max-width: 10rem 10rem;">
+            <div class="card-header">ตัวอย่างบทสนทนา</div>
+            <div class="card-body">
+                <h5 class="card-title">misc.forsale</h5>
+                <p class="card-text">I have a Seagate 3144 130MB IDE drive forsale.  I bought it yesterday
+                    and have been able to come across a 215MB that I am going to buy, but I 
+                    need to sell this one.  I guarantee that it will work.  There is still a
+                    transferable warranty I believe.  It was only used as a boot drive, not a
+                    server (source) drive.  I just want my money back out of it...$180.  Thanks
+                    a lot and offers appreciated.  Dave 317-495-5978  kari@sage.cc.purdue.edu</p>
             </div>
-        </div>     
+        </div>
         
-        <div class="card text-white bg-dark" style="max-width: 45rem;">
-            <div class="card-header">บทสนทนาที่ 3</div>
+        <div class="card text-white bg-dark" style="max-width: 10rem 10rem;">
+            <div class="card-header">ตัวอย่างบทสนทนา</div>
             <div class="card-body">
                 <h5 class="card-title">rec.motorcycles</h5>
                 <p class="card-text">
-                    Hi, I just have a small question about my bike. 
-                    Being a fairly experienced BMW and MZ-Mechanic, I just don't know what to 
-                    think about my Honda. 
-                    She was using too much oil for the last 5000 km (on my trip to Daytona bike 
-                    week this spring), and all of a sudden, she trailed smoke like hell and 
-                    was running only on one cylinder. 
-                    I towed the bike home and took it apart, but everything looks in perfect 
-                    working order. No cracks in the heads or pistons, the cylinder walls look 
-                    very clean, and the wear of pistons and cylinders is not measurable. All 
-                    still within factory specs. The only thing I could find, however, was a 
-                    slightly bigger ring gap on the right cylinder (the one with the problem), 
-                    but it is still way below the wear-limit given in the Clymer-manual for 
-                    this bike. 
-                    Any syggestions??? What else could cause my problem??? Do I have to hone 
-                    the cylinder walls (make them a little rougher in a criss-cross-pattern) in 
-                    order to get better breaking in of my new rings??? Won't that increase the 
-                    wear of my pistons??
-                    Please send comments to 
-                        sruhl@mechanical.watstar.uwaterloo.ca
-                    Thanks in advance. Stef. 
                     
-                    </p>
+                            Hey, I don't really care, but when someone sends me
+                            email telling me to fuck off, I get rather pissed.  If he posted
+                            to the net, I could really care less, but sending mail
+                            is just childish.  Mr. Infant(e) is just that, an infant.  Give 
+                            him a few more years to grow up and maybe he'll learn some 
+                            network etiquette.
+
+                            If you can't stand the flames,
+                            and you don't have the brains,
+                            Stay out of the newsgroup.
+
+                            Kind of catchy n'est pas?
+                    ---</p>
             </div>
         </div>
     </div>
